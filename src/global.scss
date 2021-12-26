@@ -1,0 +1,258 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+:root{
+    --black-ligth : #242424;
+    --black : #070607;
+    --orangee: #DB6721;
+    --strong-orangee: #D65B17;
+    --roboto: 'Roboto', sans-serif;
+    --teko : 'Teko', sans-serif;
+    --color-fuente: #464646;
+    --gris: #5F5F5F;
+    --light-grey: #DDDDDD;
+    --medium-gray : #B4B4B4;
+    --strong-grey: #B4B4B4;
+    --orange-movil : #F06800;
+}
+
+.toolbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-toolbar{
+    --background: var(--orange-movil);
+    // display: flex;
+    // justify-content: space-between;
+}
+
+.header-ios ion-toolbar:last-of-type{
+    --border-width: 0 0 0.0;
+}
+
+ion-toolbar ion-icon {
+    font-size: 30px;
+}
+ion-toolbar ion-img {
+    width: 45px;
+    height: 45px;
+}
+
+
+.carrucel-plays{
+    background: gray;
+    height: 120px;
+    margin: 10px 0;
+}
+.carousel-item{
+    position: relative;
+}
+
+.carrucel-tex{
+    font-family: var(--teko);
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+}
+.carrucel-tex h1{
+    font-size: 40px;
+    width: 90%;
+}
+
+.carousel{
+    margin-bottom: 50px;
+}
+
+.contraste{
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0,0,0, 2));
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    position: absolute;
+    transition: all .4s ease;
+  }
+
+  .carousel-indicators [data-bs-target]{
+    border-radius: 100%!important;
+    width: 8px!important;
+    height: 8px!important;
+    background: unset!important;
+    border: 1.5px solid white!important;
+}
+
+.carousel-indicators .active{
+    border: 1.5px solid var(--orange-movil)!important;
+    background-color: var(--orange-movil)!important;
+}
+
+ion-card{
+    --background: white;
+    
+}
+ion-card-content {
+    font-size: 18px!important;
+    font-family: var(--roboto);
+    font-weight: 400;
+    color: #4D4F5C;
+    // margin-top: 30px;
+}
+
+
+.card-footer{
+    width: 100%;
+    background-color: red;
+    height: 30px;
+}
+
+.news-footer{
+    margin-left: 10px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--roboto);
+}
+.news-footer h2, .news-footer span,.news-footer h3{
+    font-size: 11px;
+    font-weight: 400;
+    color: #434343;
+}
+.news-footer h2 span{
+    font-weight: 800;
+}
+.news-footer h3{
+    color: #919192;
+}
+.news-footer i{
+    margin-right: 7px;
+    color: var(--strong-orangee);
+}
+
+
+.tables > div:nth-child(1) {
+    background: var(--black);
+    color: white;
+    width: 100%;
+    height: 60px;
+    font-family: var(--teko);
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.tables {
+    margin-top: 72px!important;
+    box-shadow: 0 3px 10px #00000010;
+}
+.tables p{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 20px;
+    font-family: var(--roboto);
+    color: var(--strong-orangee);
+}
+
+
+.last-movements{
+    padding-top: 44px;
+    height: 825px;
+}
+.last-movements .moves{
+    margin-bottom: 35px!important;
+    height: 70px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.last-movements .moves .img{
+    width: 20%;
+    margin-right: 14px;
+}
+.last-movements .moves .img img{
+    width: 100%;
+}
+.last-movements .moves .info{
+    width: 80%;
+}
+.last-movements .moves .info h1{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--roboto);
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.last-movements .moves .info p{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--orangee);
+    margin: 0;
+}
+
+.slide2 p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #060506;
+    text-align: left;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+;
+}
+.slide2 div{
+    width: 90%;
+    margin: auto;
+}
+
+.c-slides {
+    margin-bottom: 50px;
+
+}
+.c-slides h1{
+    color: #060506;
+    font-family: var(--teko);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.swiper-pagination{
+    display: none!important;
+}
