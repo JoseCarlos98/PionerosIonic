@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsPage implements OnInit {
 
+  
+  slideOpts = {
+    slidesPerView: 1.5,
+    spaceBetween: 10,
+    speed: 400,
+  };
+  
   constructor() { }
 
   ngOnInit() {

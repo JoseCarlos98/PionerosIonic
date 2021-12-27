@@ -33,6 +33,7 @@
     --strong-orangee: #D65B17;
     --roboto: 'Roboto', sans-serif;
     --teko : 'Teko', sans-serif;
+    --raleway : 'Raleway', sans-serif;
     --color-fuente: #464646;
     --gris: #5F5F5F;
     --light-grey: #DDDDDD;
@@ -115,6 +116,10 @@ ion-toolbar ion-img {
     height: 8px!important;
     background: unset!important;
     border: 1.5px solid white!important;
+    -webkit-border-radius: 100%!important;
+    -moz-border-radius: 100%!important;
+    -ms-border-radius: 100%!important;
+    -o-border-radius: 100%!important;
 }
 
 .carousel-indicators .active{
@@ -250,9 +255,75 @@ ion-card-content {
     font-family: var(--teko);
     font-size: 18px;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 8px;
 }
 
 .swiper-pagination{
     display: none!important;
+}
+
+ion-card{
+    margin: 5px!important;
+    margin-bottom: 20px!important;
+}
+
+.movil-news-title{
+    position: relative;
+    margin-bottom: 50px;
+}
+.movil-news-title div{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    width: 85%;
+    height: 300px;
+}
+.movil-news-title .info h1{
+    font-size: 19px;
+    font-family: var(--roboto);
+    font-weight: 700;
+    color: var(--strong-orangee);
+}
+.movil-news-title .info p{
+    font-size: 24px;
+    font-family: var(--roboto);
+    font-weight: 700;
+    color: white;
+}
+.movil-news-title .info div{
+    background-color: #EC5A00;
+    width: 166px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--raleway);
+    margin: auto;
+    position: absolute;
+    right: 21px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 85px;
+    -webkit-border-radius: 85px;
+    -moz-border-radius: 85px;
+    -ms-border-radius: 85px;
+    -o-border-radius: 85px;
+}
+
+.c-titulares {
+    height: auto;
+    min-height: 300px;
+    
+}
+.c-titulares  div{
+    height: 50px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #707070;
+    color: #060506;
+    font-family: var(--roboto);
+    font-weight: 700;
+    line-height: 20px;
+    padding: 0 5px;
 }
