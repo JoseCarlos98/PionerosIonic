@@ -54,6 +54,12 @@
     align-items: center;
 }
 
+.f-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ion-toolbar{
     --background: var(--orange-movil);
     // display: flex;
@@ -326,4 +332,417 @@ ion-card{
     font-weight: 700;
     line-height: 20px;
     padding: 0 5px;
+}
+
+// news 
+.dn-information{
+    height: auto;
+}
+
+.dn-information h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    font-family: var(--roboto);
+    color: #333333;
+    margin-top: 20px;
+}
+.dn-information h5{
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 14px;
+    color: #434343;
+    margin: 0;
+}
+
+.dn-information .row{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+.dn-information .user{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.dn-information .user .profile, .dn-information .user .redes-user{
+    width: 250px;
+    height: 60px;
+}
+.dn-information .user .profile{
+    display: flex;
+    align-items: center;
+}
+.dn-information .user .profile .user-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 60px;
+    margin-right: 20px;
+    height: 60px;
+}
+.profile h1{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--roboto);
+    color: #070607;
+}
+.profile :nth-child(2){
+    font-family: var(--roboto);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    color: #7D7D7D;
+}
+
+.dn-information .note > p{
+    font-family: var(--roboto);
+    font-size: 14px;
+    color: #434343;
+}
+.dn-information .note>  h1{
+    font-size: 12px;
+    font-family: var(--roboto);
+    color: #7D7D7D;
+    font-style: italic;
+    font-weight: 300;
+}
+.dn-information .note>  h5{
+    font-size: 12px;
+    font-family: var(--roboto);
+    font-weight: 400;
+    color: var(--strong-orangee);
+}
+.dn-information .note img{
+    width: 100%;
+}
+.dn-information .note .orange{
+    font-family: var(--roboto);
+    color: #7D7D7D;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--strong-orangee);
+    border-left: 2px solid var(--strong-orangee);
+    padding-left: 30px;
+}
+.dn-information .note .redes{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 50px;
+}
+.dn-information .note .redes h4{
+    font-family: var(--roboto);
+    font-size: 12px;
+    color: #525252;
+}
+.dn-information .note .redes .links > div{
+    height: 30px;
+    margin-right: 12px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    color: white;
+    font-family: var(--roboto);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+}
+.dn-information .note .redes .links > div i{
+    margin-right: 5px;
+}
+.dn-information .note .redes .links {
+    display: flex;
+    flex-wrap: wrap;
+}
+.dn-information .note .redes .links .like, .share{
+    background: #4267B2;
+    width: 100px;
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    -ms-transition: .5s all ease;
+    -o-transition: .5s all ease;
+}
+.dn-information .note .redes .links .like:hover,
+.dn-information .note .redes .links .share:hover{
+    background: #2B4D90;
+}
+.dn-information .note .redes .links .like .share, .tweet{
+    width: 80px;
+}
+.dn-information .note .redes .links .like {
+    width: 85px!important;
+}
+
+.dn-information .note .redes .links .share, .dn-information .note .redes .links .tweet{
+    width: 70px!important;
+}
+
+.dn-information .note .redes .links .tweet, .follow{
+    transition: .5s all ease;
+    background: #1DA1F2;
+}
+.dn-information .note .redes .links .follow{
+    width: 130px;
+    margin-right: 0;
+}
+
+.dn-information .note .redes .links .tweet:hover,
+.dn-information .note .redes .links .follow:hover{
+    background: #61C2FD;
+}
+
+.img-detail{
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-shop{
+    background: var(--orange-movil);
+    height: 660px;
+
+}
+
+
+
+.tickets-presentation{
+    // margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    // height: 380px;
+    display: flex;
+    align-items: end;
+    // padding-bottom: 50px;
+    // margin-bottom: 78px;
+    position: relative;
+}
+.tickets-presentation img{
+    position: absolute;
+    /* right: -115px; */
+    right: 0;
+    width: 60%;
+    /* width: 75%; */
+    bottom: 0;
+}
+
+
+.tickets-presentation p{
+    color: #070607;
+    text-align: center;
+    font-size: 14px;
+    font-family: var(--roboto);
+    width: 90%;
+    font-weight: 500;
+    margin-bottom: 30px!important;
+    margin: auto;
+}
+.tickets-presentation h1{
+    font-family: var(--teko);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 45px;
+    font-weight: 700;
+}
+.tickets-presentation span{
+    font-size: 80px;
+    font-family: var(--teko);
+    font-weight: 800;
+    line-height: 60px;
+}
+.tickets-presentation {
+    font-family: var(--roboto);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.tickets-presentation .croquis{
+    display: flex;
+    justify-content: end;
+}
+
+.info-section h1{
+    font-family: var(--teko);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px!important;
+}
+.info-section p{
+    font-family: var(--roboto);
+    font-size: 14px;
+    line-height: 24px;
+    color: #7C7C91;
+}
+.info-section h2{
+    color: var(--strong-orangee);
+    font-size: 14px;
+    font-weight: 7  00;
+    font-family: var(--roboto);
+}
+
+.c-shop-content{
+    // height: 700px;
+}
+
+.c-product{
+    height: 430px;
+    width: 100%;
+    position: relative;
+}
+
+.c-product::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #00000020;
+}
+
+.img-p2{
+    background:  url(../src/assets/imgs/sour-moha-tSP10XOSIAQ-unsplash.png) center/cover;
+}
+.img-p3{
+    background:  url(../src/assets/imgs/tienda4.jpg) center/cover;
+}
+
+.info-product {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+}
+.info-product p{
+    font-size: 36px;
+    width: 200px;
+    font-family: var(--teko);
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--black);
+}
+
+.btn-see-ticket{
+    width: 145px;
+    height: 53px;
+    background: var(--orangee);
+    color: white;
+    font-size: 12px;
+    font-family: var(--roboto);
+    font-weight: 800;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.catalogo{
+    height: 420px;
+    margin-top: 20px;
+}
+.catalogo ion-col{
+    height: 186px;
+    margin: 10px;
+    background: #E8E8E8;
+}
+.catalogo ion-col div {
+    width: 100%;
+    height: 100%;
+}
+.catalogo ion-col div h1{
+    font-size: 18px;
+    font-family: var(--teko);
+    color: #EC5A00;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.catalogo ion-col div ion-img{
+    width: 80%;
+    height: 70%
+}
+
+.filters{
+    background: #E8E8E8;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    
+}
+.filters ion-icon{
+    font-size: 30px;
+    color: #4D4B4B;
+}
+.filters h1{
+    font-size: 36px;
+    font-family: var(--teko);
+    font-weight: 300;
+    color: #EC5A00;
+}
+
+.categories-shop{
+    display: flex;
+    justify-content: space-evenly;
+}
+.categories-shop-selected{
+    opacity: 100%!important;
+}
+.categories-shop h1{
+    font-family: var(--roboto);
+    font-size: 14px;
+    color: #000000;
+    opacity: 50%;
+}
+
+.c-card-products{
+    color: black;
+    min-height: 300px;
+}
+
+.products {
+    height: auto;
+    display: grid;
+    gap: 1rem;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+
+.card-product{
+    min-height: 310px;
+    margin-bottom: 10px;
+}
+.card-product h1{
+    margin-top: 25px!important;
+    color: #060506;
+    font-size: 12px;
+    font-family: var(--roboto);
+    margin: 0;
+    margin-bottom: 7px!important;
+}
+.card-product h2{
+    color: #4D4B4B;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: var(--roboto);
+}
+
+
+.categories-shop .card-product ion-img{
+    width: 100%;
+    height: 100%;
 }
