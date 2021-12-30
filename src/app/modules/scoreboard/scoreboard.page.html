@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar >
+  <ion-toolbar>
     <div class="f-b">
       <ion-img src="assets/imgs/pioneros.png"></ion-img>
       <ion-icon name="cart-outline"></ion-icon>
@@ -8,5 +8,84 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="print">
+          <ion-select value="ENGLISH">
+            <ion-select-option value="ENGLISH">ENGLISH</ion-select-option>
+            <ion-select-option value="1998">SPANICH</ion-select-option>
+            <ion-select-option value="1999">SPANICH</ion-select-option>
+          </ion-select>
+          <ion-icon name="print-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="p-0">
+    <ion-row>
+      <ion-col size="12" class="p-0">
+        <div class="filters">
+          <h1>JERSEYS</h1>
+          <ion-icon name="options-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="s-section-1">
+          <h1>MATCH DETAILS</h1>
+          <br><br>
+          <div class="scoreboard">
+            <div class="team1">
+                <img src="assets/imgs/pioneros.png" alt="">
+                PIONEROS DE LOS MOCHIS
+            </div>
+    
+            <div class="vs">
+                <h2>78</h2>
+                <span>VS</span>
+                <h2>88</h2>
+            </div>
+    
+            <div class="team2">
+                PIONEROS DE LOS MOCHIS
+                <img src="assets/imgs/caballeros.png" alt="">
+            </div>
+          </div>
+
+          <div class="date f-c">
+            <h1>DATE / TIME:</h1>
+            <h1> 13 Mar 2020, 8:30pm </h1>
+          </div>
+          <br>
+
+          <div class="matching-options">
+            <div routerLink="box-score">
+                <a routerLinkActive="active2">BOX SCORE</a>
+            </div>
+            <div routerLink="play-by-play" routerLinkActive="active">
+                <a routerLinkActive="active2">PLAY BY PLAY</a>
+            </div>
+            <div routerLink="shot-chart">
+                <a routerLinkActive="active2">SHOT CHART</a>
+            </div>
+        </div>
+
+        <div class="ruta">
+              <router-outlet></router-outlet>
+
+          <!-- <ion-router-outlet class="ruta2"></ion-router-outlet> -->
+        </div>
+
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 
 </ion-content>
