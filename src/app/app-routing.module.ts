@@ -25,13 +25,18 @@ const routes: Routes = [
   {
     path: 'menu',
     loadChildren: () => import('./modules/menu/menu.module').then( m => m.MenuPageModule)
-  },  {
+  },
+  {
     path: 'profile',
     loadChildren: () => import('./modules/profile/profile.module').then( m => m.ProfilePageModule)
   },
   {
     path: 'last-movements',
     loadChildren: () => import('./modules/last-movements/last-movements.module').then( m => m.LastMovementsPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./modules/register/register.module').then( m => m.RegisterPageModule)
   }
 
  

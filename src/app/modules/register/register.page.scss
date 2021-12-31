@@ -1,0 +1,83 @@
+.img-login{
+    width: 500px;
+    position: absolute;
+    left: 0;
+}
+.con-login{
+    margin-bottom: 100px;
+}
+
+.c-login{
+    width: 470px;
+    height: 500px;
+}
+.c-login h1{
+    font-size: 30px;
+    font-weight: 300;
+    color: #060506;
+    font-family: var(--roboto);
+}
+.c-login .login-line{
+    width: 43px;
+    height: 5px;
+    background-color: #EC5A00;
+    margin-bottom: 95px;
+    margin-top: 24px;
+}
+.c-login .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.c-login .form > input{
+    margin-bottom: 40px;
+    padding: 10px;
+    border: unset;
+    outline: none;
+    background: white;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.form ::placeholder{
+    color:#4D4B4B;
+    opacity: 50%;
+    font-size: 16px;
+}
+
+.c-login .btn-login{
+    width: 100%;
+    background: #F06800;
+    color: white;
+    font-family: var(--roboto);
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    align-items: center;
+    height: 55px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.inlogin{
+    display: flex!important;
+    justify-content: center!important;
+}
+.inlogin h1, .inlogin h2{
+    font-size: 16px;
+    font-family: 500;
+    color: #4D4B4B;
+    font-family: var(--roboto);
+} 
+.inlogin h2{
+    color: var(--orangee);
+    margin-left: 5px;
+}
+input:-webkit-autofill{
+    transition: all 5000s ease-in-out 0s;
+    transition-property: background-color, color;
+}
