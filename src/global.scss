@@ -190,11 +190,12 @@ ion-card-content {
 }
 
 .tables {
-    margin-top: 72px!important;
+    margin-top: 72px;
     box-shadow: 0 3px 10px #00000010;
 }
 .tables p{
     font-size: 14px;
+    margin-top: 50px;
     font-weight: 700;
     margin-left: 20px;
     font-family: var(--roboto);
@@ -204,11 +205,12 @@ ion-card-content {
 
 .last-movements{
     padding-top: 44px;
-    height: 825px;
+    min-height: 825px;
+    height: auto;
 }
 .last-movements .moves{
     margin-bottom: 35px!important;
-    height: 70px;
+    height: auto;
     width: 90%;
     margin: auto;
     display: flex;
@@ -1043,3 +1045,41 @@ ion-card{
 .active{
     color: var(--strong-orangee)!important;
 }
+
+.last-movements{
+    padding-top: 44px;
+    height: 825px;
+}
+.last-movements .moves{
+    margin-bottom: 35px!important;
+    height: 70px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.last-movements .moves .img{
+    width: 20%;
+    margin-right: 14px;
+}
+.last-movements .moves .img img{
+    width: 100%;
+}
+.last-movements .moves .info{
+    width: 80%;
+}
+.last-movements .moves .info h1{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--roboto);
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #070607;
+}
+.last-movements .moves .info p{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--orangee);
+    margin: 0;
+}
+
