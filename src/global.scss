@@ -635,8 +635,8 @@ ion-card{
 }
 
 .btn-see-ticket{
-    width: 145px;
-    height: 53px;
+    width: 100px;
+    height: 40px;
     background: var(--orangee);
     color: white;
     font-size: 12px;
@@ -1092,4 +1092,314 @@ ion-card{
 .c-login{
     width: 100%!important;
     padding: 5px;
+}
+
+
+.info-section{
+    // height: 850px;
+    margin-top: 30px;
+}
+
+.info-section h3{
+    margin: 0;
+    font-family: var(--roboto);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--orangee);
+}
+.info-section h1{
+    margin: 0;
+    font-family: var(--teko);
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 8px!important;
+}
+
+.tables > div:nth-child(1) {
+    background: var(--black);
+    color: white;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    font-family: var(--teko);
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 11px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+// .seating-sections > div{
+//     height: 30px;
+//     width: auto;
+//     min-width: 200px;
+//     display: flex;
+//     margin-bottom: 35px;
+//     align-items: center;
+// }
+.seating-sections .color{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+.seating-sections .price{
+    font-size: 18px;
+    font-weight: 500;
+    color: #434343;
+    font-family: var(--roboto);
+}
+
+.courtside{
+    background:#64218A;
+}
+.primera{
+    background: #8445AE;
+}
+
+.luxury{
+    background: #40C8BA;
+}
+.first{
+    background: #0089CB;
+}
+.best{
+    background: #D65B17;
+}
+.all{
+    background: #6A6A6A;
+}
+
+.select{
+    width: 100%;
+    height: 40px;
+}
+
+
+.c-c-prices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.c-prices{
+    width: 50%;
+    color: black;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.croquis{
+    margin-top: 50px;
+}
+.croquis img{
+    transform:rotate(-90deg);
+    width: 100%;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+}
+
+
+.b-section-2{
+    height: 1000px;
+    margin-top: 135px;
+}
+.b-section-2 h2 span{
+    font-size: 14px;
+    color: #4D4B4B;
+    font-weight: 400;
+    font-family: var(--roboto);
+}
+.b-section-2 h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black);
+    font-family: var(--roboto);
+}
+.b-section-2 .player{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.b-section-2 .player > div{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    border-bottom: 1px solid #E8E8E8;
+}
+.b-section-2 .player .info > div:nth-child(1){
+    width: 50px;
+    margin-right: 10px;
+    height: 50px;
+    line-height: 18px;
+}
+.b-section-2 .player .info > div:nth-child(1) h1{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: var(--roboto);
+    color: var(--orangee);
+}
+.b-section-2 .player .info > div:nth-child(1) h2{
+    font-family: var(--roboto);
+    font-size: 16px;
+    color: #434343;
+    font-family: 400;
+    margin-top: 5px;
+}
+
+.b-section-2 .player > div:nth-child(2){
+    justify-content: end;
+}
+.b-section-2 .player .info > div:nth-child(2) h1{
+    font-size: 24px;
+    font-weight: 800;
+    font-family: var(--roboto);
+    color: black;
+    margin: 0;
+
+}
+.b-section-2 .player .info > div:nth-child(2) h2{
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 400;
+    color: #434343;
+    font-family: var(--roboto);
+}
+
+.c-menu{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.c-menu .c-menu-opction ion-icon{
+    color: #4D4B4B;
+    font-size: 16px;
+}
+.c-menu .c-menu-opction{
+    height: 40px;
+    border-bottom: 0.5px solid #D7D7D7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.c-menu .c-menu-opction div ion-icon{
+    color: #D7D7D7;
+    margin-right: 10px;
+    font-size: 30px;
+}
+.c-menu .c-menu-opction div{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: var(--roboto);
+    color: #4D4B4B;
+}
+
+.support{
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+    background: #F6F6F6;
+    height: 260px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.support h1, .support h2{
+    font-family: var(--roboto);
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.support h2{
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #D7D7D7;
+}
+
+.header-roster{
+    background-image: url(assets/imgs/roster.jpg); 
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header-roster div{
+    text-align: center;
+}
+.header-roster div h1{
+    font-family: var(--teko);
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+.header-roster div h2{
+    font-family: var(--teko);
+    font-size: 68px;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+
+}
+
+.player-card{
+    overflow: hidden;
+    height: 225px;
+    
+}
+
+
+.player-card .info-card{
+    background: var(--strong-orangee);
+    height: 40px;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+
+.player-card {
+    position: relative;
+}
+.player-card .info-card div:nth-child(1){
+    width: 40px;
+    height: 40px;
+    background: var(--orangee);
+    font-family: var(--teko);
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+.player-card .info-card div:nth-child(2){
+    width: 80%;
+    height: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.player-card .info-card div:nth-child(2) h1{
+    font-family: var(--teko);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+.player-card .info-card div:nth-child(2) h2{
+    margin: 0;
+    font-size: 10px;
+    font-weight: 500;
 }

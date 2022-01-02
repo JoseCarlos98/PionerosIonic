@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
+import { RegisterPageModule } from '../register/register.module';
+import { LastMovementsPageModule } from '../last-movements/last-movements.module';
 
 const routes: Routes = [
   {
@@ -32,15 +34,31 @@ const routes: Routes = [
         loadChildren: () => import('../menu/menu.module').then(m => m.MenuPageModule)
       },
       {
+        path: 'register',
+        loadChildren: () => import('../register/register.module').then( m => m.RegisterPageModule)
+      },
+      {
+        path: 'standing',
+        loadChildren: () => import('../standing/standing.module').then( m => m.StandingPageModule)
+      },
+      {
+        path: 'last-movements',
+        loadChildren: () => import('../last-movements/last-movements.module').then( m => m.LastMovementsPageModule)
+      },
+      {
+        path: 'roster',
+        loadChildren: () => import('../roster/roster.module').then( m => m.RosterPageModule)
+      },
+      {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '',
     pathMatch: 'full'
   }
 ];
