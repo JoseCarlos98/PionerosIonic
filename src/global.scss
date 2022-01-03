@@ -90,7 +90,7 @@ ion-toolbar ion-img {
 }
 
 .slide-header{
-    width: 165px;
+    width: 145px;
     height: 110px;
     
 }
@@ -1131,7 +1131,6 @@ ion-card{
 }
 .last-movements .moves{
     margin-bottom: 35px!important;
-    height: 70px;
     width: 90%;
     margin: auto;
     display: flex;
@@ -1148,7 +1147,7 @@ ion-card{
     width: 80%;
 }
 .last-movements .moves .info h1{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     font-family: var(--roboto);
     line-height: 24px;
@@ -1157,7 +1156,7 @@ ion-card{
 }
 .last-movements .moves .info p{
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--orangee);
     margin: 0;
 }
@@ -1531,7 +1530,7 @@ ion-card{
 .carrucel-home > div h1{
     font-family: var(--teko);
     font-size: 40px;
-    font-family: 700;
+    font-weight: 700;
     color: #FFFFFF;
     margin: 0;
 }
