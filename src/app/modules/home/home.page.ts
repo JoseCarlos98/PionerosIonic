@@ -17,5 +17,10 @@ export class HomePage implements OnInit {
     spaceBetween: 10,
     speed: 400,
   };
+  slideHeader = {
+    slidesPerView: 2,
+    spaceBetween: 0,
+    speed: 400,
+  };
 
 }

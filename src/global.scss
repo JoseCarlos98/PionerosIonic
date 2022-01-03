@@ -80,12 +80,87 @@ ion-toolbar ion-img {
 
 
 .carrucel-plays{
-    background: gray;
     height: 120px;
     margin: 10px 0;
+    position: relative;
+    padding-left: 60px;
 }
 .carousel-item{
     position: relative;
+}
+
+.slide-header{
+    width: 165px;
+    height: 110px;
+    
+}
+
+.lateral-l{
+    position: absolute;
+    background: #c75711;
+    width: 60px;
+    height: 100%;
+    z-index: 100;
+    left: 0;
+    display: flex;
+    
+}
+.lateral-l .left{
+    display: flex;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.lateral-l .date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    background: var(--orange-movil);
+}
+.lateral-l .date h1{
+    margin: 0;
+    font-size: 10px;
+}
+.lateral-l .date h2{
+    margin: 0;
+    font-size: 20px;
+}
+.lateral-l .date h3{
+    margin: 0;
+    font-size: 15px;
+}
+.lateral-l .date h4{
+    margin: 0;
+    font-size: 10px;
+}
+
+.slide-header > div{
+    display: flex;
+    justify-content: space-around;
+}
+.slide-header h1{
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 11px;
+    padding: 5px;
+    margin: 0;
+    color: black;
+    font-family: var(--roboto);
+}
+.slide-header .player1 img{
+    width: 30px;
+}
+.slide-header .player1 h2{
+    font-size: 18px;
+    margin: 0;
+    color: black;
+}
+.slide-header .player1 h3{
+    margin: 0;
+    font-size: 10px;
+    color: var(--medium-gray);
 }
 
 .carrucel-tex{
@@ -252,6 +327,10 @@ ion-card-content {
 .slide2 div{
     width: 90%;
     margin: auto;
+}
+
+.slide2 img {
+    width: 100%;
 }
 
 .c-slides {
@@ -1402,4 +1481,211 @@ ion-card{
     margin: 0;
     font-size: 10px;
     font-weight: 500;
+}
+
+.card-menu{
+    width: 100%;
+}
+.card-menu div .product-img{
+    width: 100%;
+}
+.card-menu div .product-img img{
+    width: 100%;
+    height: 365px;
+}
+
+.menu-info {
+    width: 100%;
+}
+.menu-info h1{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0!important;
+}
+.menu-info span{
+    font-family: 800;
+    color: var(--strong-orangee);
+
+}
+
+.gastronomy {
+    height: auto;
+    display: grid;
+    gap: 1rem;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.carrucel-home{
+    padding-top: 77px;
+    background: #F55B02;
+    position: relative;
+}
+.carrucel-home > div{
+    width: 100%;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+.carrucel-home > div h1{
+    font-family: var(--teko);
+    font-size: 40px;
+    font-family: 700;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.carrucel-home > div h2{
+    margin: 0;
+    font-family: var(--roboto);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cart{
+    /* height: calc(100vh - 90%); */
+    // height: 700px;
+    text-align: center;
+    width: 350px;
+    padding-bottom: 20px;
+    height: auto;
+    max-height: 600px;
+    background: white;
+    // position: absolute;
+    top: 100px;
+    transition: all .4s ease;
+    right: 0;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  .cart-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cart-header h1{
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      color: var(--orange-movil);
+      margin-bottom: 61px;
+      
+    }
+    .cart-header ion-icon{
+        font-size: 30px;
+        color: var(--orange-movil);
+
+    }
+
+    .content-cart {
+        margin: auto;
+        max-height: 280px;
+        height: auto;
+        overflow: auto;
+    }
+    
+    .product-cart {
+        cursor: pointer;
+        display: flex;
+        text-align: left;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #D7D7D7;
+    }
+    
+    .product-cart img {
+        width: 80px;
+        height: 80px;
+        border: 1 px solid var(--orange-movil);
+        margin-right: 10px;
+    }
+
+    .product-cart .info-cart {
+        width: 100%;
+        min-height: 80px;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-cart .info-cart i{
+        position: absolute;
+        right: 0;
+        color: #2F3238;
+        top: 0;
+        font-size: 14px;
+    }
+
+    .product-cart .info-cart h1 {
+        margin: 0;
+        font-size: 10px;
+        color: black;
+    }
+    
+    .product-cart .info-cart h2 {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+        color: #2A2C31;
+        margin-bottom: 11px;
+    }
+
+    .product-cart .info-cart span {
+        font-size: 15px;
+        margin-top: 11px;
+        font-weight: 700;
+        color: var(--orange-movil);
+    }
+
+    .cart > div {
+        width: 95%;
+        margin: auto;
+    }
+    .cart-total {
+        height: 100px;
+        margin: auto;
+    }
+
+    .cart-total > div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .cart-total > div h1 {
+        color: red;
+        font-size: 14px;
+        font-weight: 600;
+        color: #6A6A6A;
+    }
+    .cart-total > div h2 {
+        font-size: 14px;
+        color: black;
+        font-weight: 700;
+    }
+
+    .cart-total div span {
+        color: var(--orange-movil);
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .checkout {
+        margin-top: 30px;
+        cursor: pointer;
+        background: var(--orange-movil);
+        height: 50px;
+        color: white;
+        font-size: 18px;
+        margin-bottom: 14px!important;
+        font-weight: 700;
+        border-radius: 3px    ;
+        -webkit-border-radius: 3;
+        -moz-border-radius: 3;
+        -ms-border-radius: 3;
+        -o-border-radius: 3;
 }

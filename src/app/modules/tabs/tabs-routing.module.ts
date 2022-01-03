@@ -50,6 +50,14 @@ const routes: Routes = [
         loadChildren: () => import('../roster/roster.module').then( m => m.RosterPageModule)
       },
       {
+        path: 'gastronomy',
+        loadChildren: () => import('../gastronomy/gastronomy.module').then( m => m.GastronomyPageModule)
+      },
+      {
+        path: 'cart',
+        loadChildren: () => import('../cart-header/cart-header.module').then( m => m.CartHeaderPageModule)
+      },
+      {
         path: '',
         redirectTo: '',
         pathMatch: 'full'
