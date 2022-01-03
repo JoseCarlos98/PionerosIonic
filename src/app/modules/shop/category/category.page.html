@@ -3,6 +3,7 @@
     <div class="f-b">
       <ion-img src="assets/imgs/pioneros.png"></ion-img>
       <ion-icon name="cart-outline"></ion-icon>
+   
     </div>
   </ion-toolbar>
 </ion-header>
@@ -10,15 +11,41 @@
 <ion-content>
   <div class="filters">
     <h1>JERSEYS</h1>
-    <ion-icon name="options-outline"></ion-icon>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: #4D4B4B!important;" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <!-- <ion-icon name="options-outline"></ion-icon> -->
   </div>
 
-  <div class="categories-shop">
+  <ion-menu side="end" type="push" contentId="main">
+
+    <ion-header>
+      <ion-toolbar color="danger">
+        <!-- <ion-buttons slot="start">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons> -->
+        <ion-title>CATEGORÍAS</ion-title>
+        
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-item>Jerseys</ion-item>
+        <ion-item>Tenis</ion-item>
+        <ion-item>Souvenirs</ion-item>
+        <ion-item>Accesorios</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+  <!-- <div class="categories-shop">
       <h1 class="categories-shop-selected">Casa (4)</h1>
       <h1>Visita (131)</h1>
       <h1>Mujeres (56)</h1>
-  </div>
-
+  </div> -->
+<!-- 
   <ion-grid class="c-card-products">
     <ion-row>
       <ion-col size="12" class="products">
@@ -70,6 +97,6 @@
 
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
 
 </ion-content>
